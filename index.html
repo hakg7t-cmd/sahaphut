@@ -137,7 +137,7 @@
             <p class="text-gray-500 text-sm">กดเพื่อดูรายละเอียด</p>
           </div>
 
-          <div onclick="openModal('การ์ดที่ 2','รายละเอียดการ์ดที่ 2')"
+          <div onclick="openModal2()"
             class="bg-white p-5 rounded-2xl border active:scale-95 transition">
             <h2 class="text-lg font-bold">จินตนาการสำคัญกว่าความรู้<br><span class="font-medium text-gray-500"><i
                   class="ri-hashtag"></i>ไอน์สไตน์</span></h2>
@@ -158,7 +158,8 @@
             <span class="font-bold text-black text-lg">ความแน่นอน</span> <br>
             ความแน่นอนคือสิ่งที่มีค่าคงที่ ไม่มีการเปลี่ยนแปลง <br> 
             <span class="font-bold text-black text-lg">ความไม่แน่นอน</span> <br>
-            ความไม่แน่นอนคือสิ่งที่ไม่มีมีค่าคงที่ เกิดการเปลี่ยนแปลงได้ตลอด
+            ความไม่แน่นอนคือสิ่งที่ไม่มีมีค่าคงที่ เกิดการเปลี่ยนแปลงได้ตลอด <br>
+            แต่ในบางครั้งสิ่งที่ไม่แน่นอนคือสิ่งที่แน่นอนที่สุด ทุกคนอาจจะรู้กันดีว่า สิ่งที่แน่นอนคือ สิ่งที่มีค่าคงที่ เช่น การควบคุมอุณหภูมิ คำตอบของโจทย์คณิตศาสตร์ คำตอบของโจทย์วิทยาศาสตร์ แต่สิ่งที่พิเศษที่สุดที่โลกมอบให้แก่มนุษย์คือความไม่แน่นอน ซึ่งความเป็นจริงแล้วบนโลกนี้ไม่มีความแน่นอนเลยจนมนุษย์เกิดขึ้นและสร้างความแน่นอนขึ้นมา สังเกตุได้ว่า สิ่งที่ธรรมชาติสร้างขึ้น ไม่มีรูปร่าง ลักษณะ ที่ตายตัวทุกสิ่งต่างแตกต่างกันออกไป ไม่ว่าจะเป็น ต้นไม้ ก้อนหิน ดิน ทราย หรือแม้แต่มนุษย์เอง มนุษย์ต่างเป็นสิ่งที่ไม่แน่นอน มีความคิดไม่เหมือนกัน การแสดงออกต่างๆ แต่สิ่งที่น่าแปลกมนุษย์กับสร้างสัมคมและอยู่ด้วยกันได้เกิดความคิดสร้างสรรค์สิ่งของใหม่ๆเทคโนโลยีใหม่ๆขึ้น
             </p>
           </div>
         </div>
@@ -166,10 +167,13 @@
         <div id="modal2" class="fixed inset-0 bg-black/50 flex items-center justify-center hidden">
 
           <div class="bg-white w-full max-w-sm mx-4 rounded-2xl p-6 relative animate-fadeIn">
-            <button onclick="closeModal()" class="absolute top-3 right-4 text-gray-400 text-xl">×</button>
+            <button onclick="closeModal2()" class="absolute top-3 right-4 text-gray-400 text-xl">×</button>
 
-            <h2 id="modalTitle" class="text-xl font-bold mb-2"></h2>
-            <p id="modalContent" class="text-gray-600"></p>
+            <h2 class="text-lg font-bold">จินตนาการสำคัญกว่าความรู้</h2>
+            <p id="modalContent" class="text-gray-600">จินตนาการสำคัญกว่าความรู้เพราะความรู้เกิดจากจินตนาการ เมื่อตอนยุคหินมนุษย์มีการพัฒนาที่ช้ามาก กว่าจะคิดค้นหอก และสิ่งของต่างๆได้ใช้เวลาที่นานมาก แต่สิ่งที่น่าแปลกมนุษย์เมื่อ10000ปีที่แล้ว-ปัจจุบัน มนุษย์กับคิดค้นและสร้าง
+              สรรค์สิ่งประดิษฐ์มากมาย หากย้อนไปดูแล้วมนุษย์ในตอนแรกนั้นแทบไม่มีความรู้เลย จนมนุษย์ได้คิดค้นคณิตศาสตร์และวิทยาศาสตร์ขึ้น การนับวันเวลา แต่ความรู้ที่มนุษย์สร้างขึ้นต่างเกิดมาจากจินตนาการของมนุษย์ และสิ่งที่มนุษย์มีเทคโนโลยีมากมายเพราะหากมนุษย์มีความรู้หรือความคิดมนุษย์จะบันทึกไว้ ไม่ว่าจะเป็นการวาดภาพ การจดบันทึก การพิมพ์ การถ่ายภาพ อัดคลิป <br>
+              <span class="font-bold">ความรู้ไม่สามารภถ่ายทอดทางพันธุกรรมได้แต่ความรู้สามารถถ่ายทอดผ่านการสอนได้</span>
+            </p>
           </div>
         </div>
 
@@ -178,11 +182,11 @@
   </section>
 
   <section id="project" class="h-screen flex items-center justify-center">
-    <h1 class="text-4xl font-bold">โปรเจค</h1>
+    <h1 class="text-4xl font-bold">กำลังทำ</h1>
   </section>
 
   <section id="contact" class="h-screen flex items-center justify-center">
-    <h1 class="text-4xl font-bold">ติดต่อเรา</h1>
+    <h1 class="text-4xl font-bold">กำลังพัฒนา</h1>
   </section>
 
   <!-- JS -->
