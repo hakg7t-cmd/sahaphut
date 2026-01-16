@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sahaphut</title>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Anuphan:wght@100..700&family=Caesar+Dressing&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Odibee+Sans&family=Pacifico&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sedgwick+Ave+Display&family=Stack+Sans+Notch:wght@200..700&family=Tiny5&display=swap" rel="stylesheet">
-  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Anuphan:wght@100..700&family=Caesar+Dressing&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Odibee+Sans&family=Pacifico&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sedgwick+Ave+Display&family=Stack+Sans+Notch:wght@200..700&family=Tiny5&display=swap"
+    rel="stylesheet">
+
 
   <style>
     body {
-       font-family: "IBM Plex Sans Thai", sans-serif;
-    
-     
+      font-family: "IBM Plex Sans Thai", sans-serif;
+
+
     }
 
-    h1{
+    h1 {
       padding: 0;
       margin: 0;
     }
 
-    section{
+    section {
       font-family: "IBM Plex Sans Thai", sans-serif;
     }
+
     :root {
       --bg: 255 255 255;
       --text: 0 0 0;
     }
+
     .dark {
       --bg: 17 24 39;
       --text: 255 255 255;
     }
   </style>
 </head>
+
 <body class="bg-white transition-colors duration-300 scroll-smooth">
 
   <!-- Navbar -->
@@ -42,64 +48,185 @@
     <div class="max- mx-auto px-8 py-3 sm:px-20 flex justify-between items-center">
 
       <!-- Logo -->
-      <div class="text-xl text-white font-medium flex items-center"> <h1 class="text-black">Sahaphut</h1></div>
+      <div class="text-xl text-white font-medium flex items-center">
+        <h1 class="text-black">Sahaphut</h1>
+      </div>
 
       <!-- Desktop Menu -->
       <div class="hidden md:flex space-x-6 font-medium text-[14px]">
         <a href="#home" class="text-black ">HOME</a>
-        <a href="#services" class="text-black ">ABOUT</a>
-        
+        <a href="#services" class="text-black ">ABOUT ME</a>
+        <a href="#concept" class="text-black ">CONCEPT</a>
+        <a href="#project" class="text-black ">PROJECT</a>
+        <a href="#contact" class="text-black ">CONTACT</a>
+
+
       </div>
 
       <!-- Right buttons -->
 
-        <!-- Hamburger Menu Button -->
-        <button id="menuBtn" class="md:hidden px-3 py-1 rounded-full bg-white dark:bg-white border">
-          ☰
-        </button>
-      </div>
+      <!-- Hamburger Menu Button -->
+      <button id="menuBtn" class="md:hidden px-3 py-1 rounded-full bg-white dark:bg-white border">
+        ☰
+      </button>
+    </div>
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobileMenu" class="hidden md:hidden px-5 pb-3 space-y-2 bg-white dark:bg-white border-b dark:border-gray-200 text-center">
+    <div id="mobileMenu"
+      class="hidden md:hidden px-5 pb-3 space-y-2 bg-white dark:bg-white border-b dark:border-gray-200 text-center">
       <a href="#home" class="text-gray-400 block hover:text-gray-700 ">HOME</a>
-      <a href="#services" class="text-gray-400 block hover:text-gray-700 ">ABOUT</a>
-      
+      <a href="#services" class="text-gray-400 block hover:text-gray-700 ">ABOUT ME</a>
+      <a href="#concept" class="text-gray-400 block hover:text-gray-700 ">CONCEPT</a>
+      <a href="#project" class="text-gray-400 block hover:text-gray-700 ">PROJECT</a>
+      <a href="#contact" class="text-gray-400 block hover:text-gray-700 ">CONTACT</a>
+
     </div>
   </nav>
   <div class=""></div>
 
   <!-- Sections -->
-  <section id="home" class="h-screen text-center  flex items-center justify-center" >
-    <div class="">
-    <h1 class="text-3xl p-0 m-0 font-bold text-black sm:text-6xl ">WELCOME TO SAHAPHUT</h1>
-    <p class="text-black font-bold text-lg sm:text-3xl">เว็ปไซต์สะสมผลงาน-Portfolio SAHAPHUT</p>
-    <p class="text-black text-lg sm:text-xl">นี้คือเว็ปไซต์ที่เก็บรวบรวมผลงานต่างๆ และเก็บบันทึกเรื่องราว ประวัติความเป็นมา ของ SAHAPHUT</p>
+  <section id="home" class="h-screen text-center  flex items-start justify-center sm:items-start sm:justify-center ">
+    <div class="p-5 sm:p-0 pt-20 sm:pt-40">
+      <h1 class="text-2xl p-0 m-0 font-bold text-black sm:text-6xl ">WELCOME TO SAHAPHUT</h1>
+      <p class="text-black font-bold text-lg sm:text-3xl">เว็ปไซต์สะสมผลงาน-Portfolio SAHAPHUT</p>
+      <p class="text-black text-sm sm:text-xl">นี้คือเว็ปไซต์ที่เก็บรวบรวมผลงานต่างๆ และเก็บบันทึกเรื่องราว
+        ประวัติความเป็นมา ของ SAHAPHUT</p>
+      <div class="flex items-end justify-center w-full h-[70vh] sm:h-[50vh] "><i
+          class="ri-arrow-down-circle-line text-3xl"></i></div>
     </div>
   </section>
 
-  <section id="services" class="h-screen p-10 pt-20 bg-gray-100 dark:bg-white sm:p-20 pt-0">
-    <div class="kl w-full h-screen " >
-       <h1 class="font-bold text-3xl">HELLO-สวัสดีครับ</h1>
-       <p class="text-gray-600 text-sm sm:text-lg">สวัสดีครับผมชื่อไดมอนด์ อายุ15-16ปีครับ ปัจจุบันผมกำลังศึกษาที่<span class="text-gray-700 font-bold">โรงเรียนภูพานหลวง</span>ครับ
-      ชีวิตของผมมันไม่ง่ายเลยครับ ตอนผมป6 ผมมีการเรียนที่แย่มากครับไม่ตั้งใจเรียน จนตอนนั้นผมโดนพ่อกับแม่ด่าจนผมเริ่มคิดได้จนขึ้นมาช่วง ม.1 มันเป็นครั้งแรกที่ได้มีการเปลี่ยนแปลงหลายๆอย่างเกิดขึ้นครับ ในตอนนั้นผมชอบศึกษาวิทยาศาสตร์ครับผมชอบหลักการของเครื่องยนตร์ และในตอนนั้นมันเป็นครั้งแรกเลยครับที่ผมรู้ว่าผมชอบคอมพิวเตอร์ครับ ถ้าจำไม่ผิดเริ่มแรกผมเข้าชุมนุมคอมพิวเตอร์ในเทอมแรกพอมาเทอม2ครูให้ผมไปแข่งในรายการ แข่งออกแบบสิ่งของเครื่องใช้ด้วยโปรแกรม <span class="font-bold text-gray-700">SketchUp</span> แต่ผมได้ที่2มาครับ แต่ตอนนั้นผมไม่เสียใจเลยมันเป็นสนามแรกที่ผมได้ไปลงแข่งขันได้ที่2มาถือว่าโชคดีมากแล้วครับพอมาช่วงม2ผมได้ไปแข่งอีกครั้งแต่ครั้งนี้ผมได้ลำดีบที่3มาครับเพราะในช่วงนั้นมันเป็นช่วงแรกที่ทำให้ผมนั้นเริ่มเปลี่ยนไปเป็นคนละคนครับมันทำให้ผมเครียดที่ผมเครียดไม่ได้มาจากเรื่องนี้เรื่องเดียวครับแต่มันเกิดจากหลายๆเรื่องมารวมกันครับซึ่งมันลากยาวมาจนถึงปัจจุบันเลยครับ แต่ปัจจุบันนี้ม.3 ผมมีโอกาสไปแข่งใหม่ได้ลำดับที่1จากโรงเรียนเอกชนได้ลำดับที่3 ในเขต2สกลนครครับ ผมยอมรับเลยครับว่าช่วงนี้จิตใจของผมไม่คงที่ครับ บางครั้งผมก็ทำตัวเหลวไหลไปบางซึ่งแม้แต่ตัวผมเองก็ไม่เข้าใจเหมือนกันครับ วันบางวันผมมีความสุขมากแต่วันถัดมาผมกับดิ่งมากครับ บางครั้งผมก็เคยคิดครับว่า <span class="font-bold text-gray-700">เกิดมาทำไมและทำไมถึงเกิดมา</span> แต่ตอนนี้ผมได้เข้าใจทุกอย่างแล้วครับว่าบางครั้งเราก็ไม่จำเป็นต้องมีความหมายในการใช้ชีวิตแค่เราต้องมีความสุขกับมันก็พอ
+  <section id="services" class="h-screen p-10 pt-20 bg-white sm:p-20 pt-0">
+    <div class="kl w-full h-screen ">
+      <h1 class="font-bold text-3xl"><span class="text-gray-600"><i
+            class="ri-double-quotes-l"></i></span>HELLO-สวัสดีครับ<span class="text-gray-600"><i
+            class="ri-double-quotes-r"></i></span></h1>
+      <p class="text-gray-600 text-sm sm:text-lg">สวัสดีครับผมชื่อไดมอนด์ อายุ15-16ปีครับ ปัจจุบันผมกำลังศึกษาที่<span
+          class="text-gray-700 font-bold">โรงเรียนภูพานหลวง</span>ครับ
+        ชีวิตของผมมันไม่ง่ายเลยครับ ตอนผมป6 ผมมีการเรียนที่แย่มากครับไม่ตั้งใจเรียน
+        จนตอนนั้นผมโดนพ่อกับแม่ด่าจนผมเริ่มคิดได้จนขึ้นมาช่วง ม.1
+        มันเป็นครั้งแรกที่ได้มีการเปลี่ยนแปลงหลายๆอย่างเกิดขึ้นครับ
+        ในตอนนั้นผมชอบศึกษาวิทยาศาสตร์ครับผมชอบหลักการของเครื่องยนตร์
+        และในตอนนั้นมันเป็นครั้งแรกเลยครับที่ผมรู้ว่าผมชอบคอมพิวเตอร์ครับ
+        ถ้าจำไม่ผิดเริ่มแรกผมเข้าชุมนุมคอมพิวเตอร์ในเทอมแรกพอมาเทอม2ครูให้ผมไปแข่งในรายการ
+        แข่งออกแบบสิ่งของเครื่องใช้ด้วยโปรแกรม <span class="font-bold text-gray-700">SketchUp</span> แต่ผมได้ที่2มาครับ
+        แต่ตอนนั้นผมไม่เสียใจเลยมันเป็นสนามแรกที่ผมได้ไปลงแข่งขันได้ที่2มาถือว่าโชคดีมากแล้วครับพอมาช่วงม2ผมได้ไปแข่งอีกครั้งแต่ครั้งนี้ผมได้ลำดีบที่3มาครับเพราะในช่วงนั้นมันเป็นช่วงแรกที่ทำให้ผมนั้นเริ่มเปลี่ยนไปเป็นคนละคนครับมันทำให้ผมเครียดที่ผมเครียดไม่ได้มาจากเรื่องนี้เรื่องเดียวครับแต่มันเกิดจากหลายๆเรื่องมารวมกันครับซึ่งมันลากยาวมาจนถึงปัจจุบันเลยครับ
+        แต่ปัจจุบันนี้ม.3 ผมมีโอกาสไปแข่งใหม่ได้ลำดับที่1จากโรงเรียนเอกชนได้ลำดับที่3 ในเขต2สกลนครครับ
+        ผมยอมรับเลยครับว่าช่วงนี้จิตใจของผมไม่คงที่ครับ
+        บางครั้งผมก็ทำตัวเหลวไหลไปบางซึ่งแม้แต่ตัวผมเองก็ไม่เข้าใจเหมือนกันครับ
+        วันบางวันผมมีความสุขมากแต่วันถัดมาผมกับดิ่งมากครับ บางครั้งผมก็เคยคิดครับว่า <span
+          class="font-bold text-gray-700">เกิดมาทำไมและทำไมถึงเกิดมา</span>
+        แต่ตอนนี้ผมได้เข้าใจทุกอย่างแล้วครับว่าบางครั้งเราก็ไม่จำเป็นต้องมีความหมายในการใช้ชีวิตแค่เราต้องมีความสุขกับมันก็พอ
       </p>
     </div>
   </section>
 
-  <section id="contact" style="display: none;" class="h-screen flex items-center justify-center" >
+  <section id="concept" class="h-screen pt-20">
+    <div class="p-10 pt-20 sm:p-20">
+      <h1 class="text-3xl font-bold"><span class="text-gray-600"><i class="ri-double-quotes-l"></i></span>แนวคิด<span
+          class="text-gray-600"><i class="ri-double-quotes-r"></i></span></h1>
+      <div class="w-full">
+
+        <div class="space-y-4 max-w-full mx-auto">
+
+          <div onclick="openModal1()"
+            class="bg-white p-5 rounded-2xl border active:scale-95 transition">
+            <h2 class="text-lg font-bold">กฎเหล็ก2ข้อที่โลกมอบให้<br><span class="font-medium text-gray-500 ">
+              <i class="ri-hashtag"></i>Sahaphut</span></h2>
+            <p class="text-gray-500 text-sm">กดเพื่อดูรายละเอียด</p>
+          </div>
+
+          <div onclick="openModal('การ์ดที่ 2','รายละเอียดการ์ดที่ 2')"
+            class="bg-white p-5 rounded-2xl border active:scale-95 transition">
+            <h2 class="text-lg font-bold">จินตนาการสำคัญกว่าความรู้<br><span class="font-medium text-gray-500"><i
+                  class="ri-hashtag"></i>ไอน์สไตน์</span></h2>
+            <p class="text-gray-500 text-sm">กดเพื่อดูรายละเอียด</p>
+          </div>
+
+          
+
+        </div>
+
+        <div id="modal1" class="fixed inset-0 bg-black/50 flex items-center justify-center hidden">
+
+          <div class="bg-white w-full max-w-sm mx-4 rounded-2xl p-6 relative animate-fadeIn">
+            <button onclick="closeModal1()" class="absolute top-3 right-4 text-gray-400 text-xl">×</button>
+
+            <h2 class="text-lg font-bold">กฎเหล็ก2ข้อที่โลกมอบให้</h2>
+            <p id="modalContent" class="text-gray-600 text-sm">สำหรับผมแล้วมีกฎเหล็กอยู่2ข้อที่โลกมอบให้ คือ <span class="font-bold">ความแน่นอน</span> กับ <span class="font-bold">ความไม่แน่นอน</span> <br>
+            <span class="font-bold text-black text-lg">ความแน่นอน</span> <br>
+            ความแน่นอนคือสิ่งที่มีค่าคงที่ ไม่มีการเปลี่ยนแปลง <br> 
+            <span class="font-bold text-black text-lg">ความไม่แน่นอน</span> <br>
+            ความไม่แน่นอนคือสิ่งที่ไม่มีมีค่าคงที่ เกิดการเปลี่ยนแปลงได้ตลอด
+            </p>
+          </div>
+        </div>
+
+        <div id="modal2" class="fixed inset-0 bg-black/50 flex items-center justify-center hidden">
+
+          <div class="bg-white w-full max-w-sm mx-4 rounded-2xl p-6 relative animate-fadeIn">
+            <button onclick="closeModal()" class="absolute top-3 right-4 text-gray-400 text-xl">×</button>
+
+            <h2 id="modalTitle" class="text-xl font-bold mb-2"></h2>
+            <p id="modalContent" class="text-gray-600"></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="project" class="h-screen flex items-center justify-center">
+    <h1 class="text-4xl font-bold">โปรเจค</h1>
+  </section>
+
+  <section id="contact" class="h-screen flex items-center justify-center">
     <h1 class="text-4xl font-bold">ติดต่อเรา</h1>
   </section>
 
   <!-- JS -->
   <script>
     const menuBtn = document.getElementById("menuBtn");
-  const mobileMenu = document.getElementById("mobileMenu");
+    const mobileMenu = document.getElementById("mobileMenu");
 
-  menuBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-  });
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
   </script>
-<script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+
+    function openModal1() {
+  document.getElementById('modal1').classList.remove('hidden')
+}
+function closeModal1() {
+  document.getElementById('modal1').classList.add('hidden')
+}
+
+function openModal2() {
+  document.getElementById('modal2').classList.remove('hidden')
+}
+function closeModal2() {
+  document.getElementById('modal2').classList.add('hidden')
+}
+
+function openModal3() {
+  document.getElementById('modal3').classList.remove('hidden')
+}
+function closeModal3() {
+  document.getElementById('modal3').classList.add('hidden')
+}
+
+function openModal4() {
+  document.getElementById('modal4').classList.remove('hidden')
+}
+function closeModal4() {
+  document.getElementById('modal4').classList.add('hidden')
+}
+
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
 </body>
+
 </html>
