@@ -218,8 +218,46 @@
               <span class="font-bold">ความรู้ไม่สามารภถ่ายทอดทางพันธุกรรมได้แต่ความรู้สามารถถ่ายทอดผ่านการสอนได้</span>
             </p>
           </div>
+          
         </div>
+       <div class="bg-white p-2 rounded-2xl  text-center ">
+    <h1 class="text-xl font-semibold">อายุผู้สร้าง</h1>
+    <p class="text-gray-500">4 พฤศจิกายน 2010</p>
 
+    <div class="flex flex-wrap gap-6 justify-center text-sky-600 text-2xl font-bold">
+
+      <div class="counter border border-black rounded-2xl border-[2px] p-2">
+        <div class="number text-black" id="years">0</div>
+        <span class="label text-sm text-gray-400">ปี</span>
+      </div>
+
+      <div class="counter border border-black rounded-2xl border-[2px] p-2">
+        <div class="number text-black" id="months">0</div>
+        <span class="label text-sm text-gray-400">เดือน</span>
+      </div>
+
+      <div class="counter border border-black rounded-2xl border-[2px] p-2">
+        <div class="number text-black" id="days">0</div>
+        <span class="label text-sm text-gray-400">วัน</span>
+      </div>
+
+      <div class="counter border border-black rounded-2xl border-[2px] p-2">
+        <div class="number text-black" id="hours">0</div>
+        <span class="label text-sm text-gray-400">ชั่วโมง</span>
+      </div>
+
+      <div class="counter border border-black rounded-2xl border-[2px] p-2">
+        <div class="number text-black" id="minutes">0</div>
+        <span class="label text-sm text-gray-400">นาที</span>
+      </div>
+
+      <div class="counter border border-black rounded-2xl border-[2px] p-2">
+        <div class="number text-black" id="seconds">0</div>
+        <span class="label text-sm text-gray-400">วินาที</span>
+      </div>
+
+    </div>
+  </div>
       </div>
     </div>
   </section>
@@ -318,6 +356,70 @@ function scrollToSection(e, id) {
   <script>
   AOS.init();
 </script>
+<script>
+    const startDate = new Date(2010, 10, 4, 0, 0, 0); // 4 พ.ย. 2010
+
+    const elements = {
+      years: years,
+      months: months,
+      days: days,
+      hours: hours,
+      minutes: minutes,
+      seconds: seconds,
+    };
+
+    function animateChange(el, newValue) {
+      if (el.textContent == newValue) return;
+
+      el.classList.add("animate");
+
+      setTimeout(() => {
+        el.textContent = String(newValue).padStart(2, "0");
+        el.classList.remove("animate");
+
+        el.style.transform = "translateY(20px)";
+        el.style.opacity = "0";
+
+        requestAnimationFrame(() => {
+          el.style.transform = "translateY(0)";
+          el.style.opacity = "1";
+        });
+      }, 200);
+    }
+
+    function updateCounter() {
+      const now = new Date();
+
+      let years = now.getFullYear() - startDate.getFullYear();
+      let months = now.getMonth() - startDate.getMonth();
+      let days = now.getDate() - startDate.getDate();
+
+      if (days < 0) {
+        months--;
+        const prevMonth = new Date(now.getFullYear(), now.getMonth(), 0);
+        days += prevMonth.getDate();
+      }
+
+      if (months < 0) {
+        years--;
+        months += 12;
+      }
+
+      let hours = now.getHours();
+      let minutes = now.getMinutes();
+      let seconds = now.getSeconds();
+
+      animateChange(elements.years, years);
+      animateChange(elements.months, months);
+      animateChange(elements.days, days);
+      animateChange(elements.hours, hours);
+      animateChange(elements.minutes, minutes);
+      animateChange(elements.seconds, seconds);
+    }
+
+    updateCounter();
+    setInterval(updateCounter, 1000);
+  </script>
 </body>
 
 </html>
