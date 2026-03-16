@@ -1,419 +1,71 @@
 <!DOCTYPE html>
-<html lang="th">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sahaphat</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace-theme-default.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Anuphan:wght@100..700&family=Caesar+Dressing&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Odibee+Sans&family=Pacifico&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sedgwick+Ave+Display&family=Stack+Sans+Notch:wght@200..700&family=Tiny5&display=swap"
-    rel="stylesheet">
-  <style>
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(10px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .animate-fadeIn {
-      animation: fadeIn 0.3s ease-out;
-    }
-  </style>
-
-  <style>
-    body {
-      font-family: "IBM Plex Sans Thai", sans-serif;
-
-
-    }
-
-    h1 {
-      padding: 0;
-      margin: 0;
-    }
-
-    section {
-      font-family: "IBM Plex Sans Thai", sans-serif;
-    }
-
-    :root {
-      --bg: 255 255 255;
-      --text: 0 0 0;
-    }
-
-    .dark {
-      --bg: 17 24 39;
-      --text: 255 255 255;
-    }
-
-    
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Anuphan:wght@100..700&family=Caesar+Dressing&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Itim&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Odibee+Sans&family=Pacifico&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sedgwick+Ave+Display&family=Stack+Sans+Notch:wght@200..700&family=Tiny5&display=swap" rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+    <style>
+        body {
+            font-family: "Prompt", sans-serif;
+        }
+        section {
+            height: 100vh;
+        }
+    </style>
 </head>
-
-<body class="bg-white  duration-2000 scroll-smooth">
-
-  <!-- Navbar -->
-  <nav class="fixed top-0 left-0 w-full bg-white z-50 ">
-    <div class="max- mx-auto px-8 py-3 sm:px-20 flex justify-between items-center">
-
+<body>
+    <nav class="sticky top-0 z-50 bg-white border-bt border border-gray-200">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex justify-between items-center h-14">
+      
       <!-- Logo -->
-      <div class="text-xl text-white font-medium flex items-center">
-        <h1 class="text-black">Sahaphat</h1>
+      <div class="text-xl font-bold text-gray-800">
+        <h1>SPHC</h1>
       </div>
 
       <!-- Desktop Menu -->
-      <div class="hidden md:flex space-x-6 font-medium text-[14px]">
-        <a href="#home" class="text-black " onclick="scrollToSection(event, 'home')">HOME</a>
-        <a href="#services" class="text-black " onclick="scrollToSection(event, 'services')">ABOUT ME</a>
-        <a href="#concept" class="text-black " onclick="scrollToSection(event, 'concept')">CONCEPT</a>
-        <a href="#project" class="text-black " onclick="scrollToSection(event, 'project')">PROJECT</a>
-        <a href="#contact" class="text-black " onclick="scrollToSection(event, 'contact')">CONTACT</a>
-
-
+      <div class="hidden md:flex space-x-8 text-[14px]">
+        <a href="#" class="text-gray-700 hover:text-blue-600 transition">หน้าหลัก</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600 transition">ประวัติผู้สร้าง</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600 transition">แนวคิด</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600 transition">โปรเจค</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600 transition">แนวคิด</a>
       </div>
 
-      <!-- Right buttons -->
-
-      <!-- Hamburger Menu Button -->
-      <button id="menuBtn" class="md:hidden px-3 py-1 rounded-full bg-white dark:bg-white border">
+      <!-- Mobile Button -->
+      <button id="menuBtn" class="md:hidden text-gray-700 text-2xl">
         ☰
       </button>
-    </div>
-    </div>
-
-    <!-- Mobile Menu -->
-    <div id="mobileMenu"
-      class="hidden md:hidden px-5 pb-3 space-y-2 bg-white dark:bg-white border-b dark:border-gray-200 text-center animate-fadeIn">
-      <a href="#home" class="text-gray-400 block hover:text-gray-700 " onclick="scrollToSection(event, 'home')" >HOME</a>
-      <a href="#services" class="text-gray-400 block hover:text-gray-700 " onclick="scrollToSection(event, 'services')">ABOUT ME</a>
-      <a href="#concept" class="text-gray-400 block hover:text-gray-700 " onclick="scrollToSection(event, 'concept')">CONCEPT</a>
-      <a href="#project" class="text-gray-400 block hover:text-gray-700 " onclick="scrollToSection(event, 'project')">PROJECT</a>
-      <a href="#contact" class="text-gray-400 block hover:text-gray-700 " onclick="scrollToSection(event, 'contact')">CONTACT</a>
-
-    </div>
-  </nav>
-  <div class=""></div>
-
-  <!-- Sections -->
-  <section id="home"
-    class="h-screen text-center  flex items-start justify-center sm:items-start sm:justify-center relative ">
-    <div class="p-5 sm:p-0 pt-20 sm:pt-40 ">
-      <img src="https://img5.pic.in.th/file/secure-sv1/-771_20260116234530.png"
-        class="w-[550px] h-[500px] sm:w-[500px] sm:h-[500px] shadow-2xl   opacity-10" >
-      <div class="absolute inset-0 flex flex-col justify-end p-4 text-black">
-
-        <h1 class="text-2xl p-0 m-0 font-bold text-black sm:text-6xl " data-aos="zoom-in" data-aos-duration="1000">WELCOME TO SAHAPHAT</h1>
-        <p class="text-black font-bold text-lg sm:text-3xl" data-aos="zoom-in" data-aos-duration="1200">เว็ปไซต์สะสมผลงาน-Portfolio SAHAPHAT</p>
-        <p class="text-black text-sm sm:text-xl" data-aos="zoom-in" data-aos-duration="1400">นี้คือเว็ปไซต์ที่เก็บรวบรวมผลงานต่างๆ และเก็บบันทึกเรื่องราว
-          ประวัติความเป็นมา ของ SAHAPHAT</p>
-        <div class="flex items-end justify-center pt-5">
-          <img src="https://img2.pic.in.th/IMG_20260101_015638_255.jpg" alt="IMG 20260101 015638 255"
-            class="w-[200px] h-[200px] shadow-2xl rounded-3xl" data-aos="fade-up" data-aos-duration="1600">
-        </div>
-        <div class="flex items-end justify-center w-full h-[25vh] sm:h-[20vh] " ><i
-            class="ri-arrow-down-circle-line text-3xl" onclick="scrollToSection(event, 'services')" data-aos="zoom-in"></i></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="services" class="h-screen p-10 pt-20 bg-[url('https://img5.pic.in.th/file/secure-sv1/-772_20260117010313.png')] sm:bg-[url('https://img2.pic.in.th/-773_20260117010420.png')] bg-cover bg-center bg-fixed sm:p-20 pt-0">
-    <div class="kl w-full h-screen ">
-      <h1 class="font-bold text-3xl underline decoration-4 decoration-gray-600 " data-aos="fade-up" data-aos-duration="1000">สวัสดีครับ</h1>
-      <p class="text-gray-600 text-sm sm:text-lg" data-aos="fade-up" data-aos-duration="1200">สวัสดีครับผมชื่อไดมอนด์ อายุ15-16ปีครับ ปัจจุบันผมกำลังศึกษาที่ <span
-          class="text-gray-700 font-bold underline decoration-2" >โรงเรียนภูพานหลวง</span> ครับโตขึ้นผมอยากเป็นโปรแกรมเมอร์ครับ ผมชอบด้านการออกแบบ เว็ปไซต์ครับและผมชอบการออกแบบกราฟิกด้วยครับ เพราะการออกแบบทำให้ผมได้มีเวลาอยู่กับตัวเองครับ
-        
-      </p>
-      <h1 class="text-2xl font-bold underline decoration-4 decoration-gray-600" data-aos="fade-up" data-aos-duration="1400">ทักษะ</h1>
-      <p class="text-gray-600 text-sm sm:text-lg" data-aos="fade-up" data-aos-duration="1600">HTML CSS tailwindcss และ ออกแบบโมเดล ด้วยโปรแกรม SketchUp</p>
-      <h1 class="text-2xl font-bold underline decoration-4 decoration-gray-600" data-aos="fade-up" data-aos-duration="1800">คติ</h1>
-      <p class="text-gray-600 text-sm sm:text-lg" data-aos="fade-up" data-aos-duration="2000">วิ่งหรือเดินระยะทางเท่ากันเหนื่อยเท่ากันแต่ทำไมมีแอปแล้วไม่เรียกรถจะเดินกับวิ่งทำไม</p>
-      <div class="flex flex-col sm:flex-row items-center justify-center  w-full p-2">
-        <div class="sm:w-full  flex items-center justify-center" data-aos="fade-up" data-aos-duration="2000">
-          <h1 class="font-bold text-sm text-gray-900  w-full underline decoration-4 decoration-gray-400 sm:text-5xl rotate-6 ">การเรียนรู้<br>ไม่มีวันที่สิ้นสุด</h1>
-        </div>
-      <div class="flex items-start justify-center  sm:justify-end pt-5 w-full z-5" data-aos="fade-up" data-aos-duration="2000">
-          <img src="https://img2.pic.in.th/IMG_20251006_215109_187.jpg" alt="IMG 20251006 215109 187" class="w-[150px] h-[150px] sm:w-[300px] sm:h-[300px]  rounded-3xl rotate-6 drop-shadow-[10px_10px_0_rgba(0,0,0,0.2)] w-[50%]" >
-        </div>
-        </div>
-    </div>
-  </section>
-
-  <section id="concept" class="h-screen pt-20">
-    <div class="p-10 pt-20 sm:p-20">
-      <h1 class="text-3xl font-bold underline decoration-4 decoration-gray-600"data-aos="fade-up" data-aos-duration="1000">แนวคิด</h1>
-      <div class="w-full ">
-
-        <div class="space-y-4 max-w-full mx-auto">
-
-          <div onclick="openModal1()" class="bg-white p-5 rounded-2xl border active:scale-95 transition" data-aos="fade-up" data-aos-duration="1200">
-            <h2 class="text-lg font-bold underline decoration-2 decoration-gray-400">กฎเหล็ก2ข้อที่โลกมอบให้<br><span class="font-medium text-gray-500 ">
-                <i class="ri-hashtag"></i>Sahaphat</span></h2>
-            <p class="text-gray-500 text-sm">กดเพื่อดูรายละเอียด</p>
-          </div>
-
-          <div onclick="openModal2()" class="bg-white p-5 rounded-2xl border active:scale-95 transition" data-aos="fade-up" data-aos-duration="1400">
-            <h2 class="text-lg font-bold underline decoration-2 decoration-gray-400">จินตนาการสำคัญกว่าความรู้<br><span class="font-medium text-gray-500"><i
-                  class="ri-hashtag"></i>ไอน์สไตน์</span></h2>
-            <p class="text-gray-500 text-sm">กดเพื่อดูรายละเอียด</p>
-          </div>
-
-
-
-        </div>
-
-        <div id="modal1" class="fixed inset-0 bg-black/50 flex items-center justify-center hidden z-10">
-
-          <div class="bg-white w-full max-w-sm mx-4 rounded-2xl p-6 relative animate-fadeIn">
-            <button onclick="closeModal1()" class="absolute top-3 right-4 text-gray-400 w-7 rounded-xl text-xl bg-black">×</button>
-
-            <h2 class="text-lg font-bold">กฎเหล็ก2ข้อที่โลกมอบให้</h2>
-            <p id="modalContent" class="text-gray-600 text-sm">สำหรับผมแล้วมีกฎเหล็กอยู่2ข้อที่โลกมอบให้ คือ <span
-                class="font-bold">ความแน่นอน</span> กับ <span class="font-bold">ความไม่แน่นอน</span> <br>
-              <span class="font-bold text-black text-lg">ความแน่นอน</span> <br>
-              ความแน่นอนคือสิ่งที่มีค่าคงที่ ไม่มีการเปลี่ยนแปลง <br>
-              <span class="font-bold text-black text-lg">ความไม่แน่นอน</span> <br>
-              ความไม่แน่นอนคือสิ่งที่ไม่มีค่าคงที่ เกิดการเปลี่ยนแปลงได้ตลอด <br>
-              แต่ในบางครั้งสิ่งที่ไม่แน่นอนคือสิ่งที่แน่นอนที่สุด ทุกคนอาจจะรู้กันดีว่า สิ่งที่แน่นอนคือ
-              สิ่งที่มีค่าคงที่ เช่น การควบคุมอุณหภูมิ คำตอบของโจทย์คณิตศาสตร์ คำตอบของโจทย์วิทยาศาสตร์
-              แต่สิ่งที่พิเศษที่สุดที่โลกมอบให้แก่มนุษย์คือความไม่แน่นอน
-              ซึ่งความเป็นจริงแล้วบนโลกนี้ไม่มีความแน่นอนเลยจนมนุษย์เกิดขึ้นและสร้างความแน่นอนขึ้นมา สังเกตุได้ว่า
-              สิ่งที่ธรรมชาติสร้างขึ้น ไม่มีรูปร่าง ลักษณะ ที่ตายตัวทุกสิ่งต่างแตกต่างกันออกไป ไม่ว่าจะเป็น ต้นไม้
-              ก้อนหิน ดิน ทราย หรือแม้แต่มนุษย์เอง มนุษย์ต่างเป็นสิ่งที่ไม่แน่นอน มีความคิดไม่เหมือนกัน การแสดงออกต่างๆ
-              แต่สิ่งที่น่าแปลกมนุษย์กับสร้างสัมคมและอยู่ด้วยกันได้เกิดความคิดสร้างสิ่งของใหม่ๆและเทคโนโลยีใหม่ๆขึ้น
-            </p>
-          </div>
-        </div>
-
-        <div id="modal2" class="fixed inset-0 bg-black/50 flex items-center justify-center hidden z-10">
-
-          <div class="bg-white w-full max-w-sm mx-4 rounded-2xl p-6 relative animate-fadeIn">
-            <button onclick="closeModal2()" class="absolute top-3 right-4 text-gray-400 w-7 rounded-xl text-xl bg-black">×</button>
-
-            <h2 class="text-lg font-bold">จินตนาการสำคัญกว่าความรู้</h2>
-            <p id="modalContent" class="text-gray-600">จินตนาการสำคัญกว่าความรู้เพราะความรู้เกิดจากจินตนาการ
-              เมื่อตอนยุคหินมนุษย์มีการพัฒนาที่ช้ามาก กว่าจะคิดค้นหอก และสิ่งของต่างๆได้ใช้เวลาที่นานมาก
-              แต่สิ่งที่น่าแปลกมนุษย์เมื่อ10000ปีที่แล้ว-ปัจจุบัน มนุษย์กับคิดค้นและสร้าง
-              สรรค์สิ่งประดิษฐ์มากมาย หากย้อนไปดูแล้วมนุษย์ในตอนแรกนั้นแทบไม่มีความรู้เลย
-              จนมนุษย์ได้คิดค้นคณิตศาสตร์และวิทยาศาสตร์ขึ้น การนับวันเวลา
-              แต่ความรู้ที่มนุษย์สร้างขึ้นต่างเกิดมาจากจินตนาการของมนุษย์
-              และสิ่งที่มนุษย์มีเทคโนโลยีมากมายเพราะหากมนุษย์มีความคิดมนุษย์จะบันทึกไว้ ไม่ว่าจะเป็นการวาดภาพ
-              การจดบันทึก การพิมพ์ การถ่ายภาพ อัดคลิป ทำให้ผู้ที่มาศึกษาภายหลังสามารถนำไปปรับปรุงหรือพัฒนาต่อได้ง่าย <br>
-              <span class="font-bold">ความรู้ไม่สามารภถ่ายทอดทางพันธุกรรมได้แต่ความรู้สามารถถ่ายทอดผ่านการสอนได้</span>
-            </p>
-          </div>
-          
-        </div>
-       <div class="bg-white p-2 rounded-2xl  text-center ">
-    <h1 class="text-xl font-semibold " data-aos="fade-up" data-aos-duration="1000">อายุผู้สร้าง</h1>
-    <p class="text-gray-500" data-aos="fade-up" data-aos-duration="1200">4 พฤศจิกายน 2010</p>
-
-    <div class="flex flex-wrap gap-6 justify-center text-sky-600 text-2xl font-bold">
-
-      <div class="counter border  rounded-2xl  p-2 " data-aos="fade-up" data-aos-duration="1000">
-        <div class="number text-black" id="years">0</div>
-        <span class="label text-sm text-gray-400">ปี</span>
-      </div>
-
-      <div class="counter border  rounded-2xl  p-2" data-aos="fade-up" data-aos-duration="1200">
-        <div class="number text-black" id="months">0</div>
-        <span class="label text-sm text-gray-400">เดือน</span>
-      </div>
-
-      <div class="counter border  rounded-2xl  p-2" data-aos="fade-up" data-aos-duration="1400">
-        <div class="number text-black" id="days">0</div>
-        <span class="label text-sm text-gray-400">วัน</span>
-      </div>
-
-      <div class="counter border  rounded-2xl  p-2" data-aos="fade-up" data-aos-duration="1600">
-        <div class="number text-black" id="hours">0</div>
-        <span class="label text-sm text-gray-400">ชั่วโมง</span>
-      </div>
-
-      <div class="counter border  rounded-2xl  p-2" data-aos="fade-up" data-aos-duration="1800">
-        <div class="number text-black" id="minutes">0</div>
-        <span class="label text-sm text-gray-400">นาที</span>
-      </div>
-
-      <div class="counter border  rounded-2xl  p-2" data-aos="fade-up" data-aos-duration="2000">
-        <div class="number text-black" id="seconds">0</div>
-        <span class="label text-sm text-gray-400">วินาที</span>
-      </div>
 
     </div>
   </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="project" class="h-screen pt-20">
-    <div class="p-10 pt-20 sm:p-20">
-    <h1 class="text-3xl font-bold underline decoration-4 decoration-gray-600" data-aos="fade-up" data-aos-duration="1000">ผลงาน</h1>
-    <div class="space-y-4 max-w-full mx-auto">
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden px-4 pb-4 space-y-2">
+    <a href="#" class="block text-gray-700 hover:text-blue-600">Home</a>
+    <a href="#" class="block text-gray-700 hover:text-blue-600">About</a>
+    <a href="#" class="block text-gray-700 hover:text-blue-600">Portfolio</a>
+    <a href="#" class="block text-gray-700 hover:text-blue-600">Contact</a>
+  </div>
+</nav>
+<section class="flex justify-center ">
+<div class="mt-10 font-bold">
+  <p class="">เปิดประตูสู่</p>
+  <h1 class="text-8xl">เส้นทางแห่งความฝัน</h1>
+</div>
+</section>
 
-          <div onclick="openModal3()" class="bg-white p-5 rounded-2xl  border active:scale-95 transition" data-aos="fade-up" data-aos-duration="1400">
-            <img src="https://img2.pic.in.th/rhgrh.png" alt="rhgrh" class="w-100">
-            <h2 class="text-lg font-bold underline decoration-2 decoration-gray-400">เว็ปไซต์แนะนำตัว<br><span class="font-medium text-gray-500 ">
-                <i class="ri-hashtag"></i>Sahaphat</span></h2>
-            <p class="text-gray-500 text-sm">กดเพื่อดูรายละเอียด</p>
-          </div>
-
-           <div id="modal3" class="fixed inset-0 bg-black/50 flex items-center justify-center hidden z-10">
-
-          <div class="bg-white w-full max-w-sm mx-4 rounded-2xl p-6 relative animate-fadeIn">
-            <button onclick="closeModal3()" class="absolute top-3 right-4 text-gray-400 w-7 rounded-xl text-xl bg-black">×</button>
-             <img src="https://img2.pic.in.th/rhgrh.png" alt="rhgrh" class="w-100">
-            <h2 class="text-lg font-bold">เว็ปไซต์แนะนำตัว</h2>
-
-            <p id="modalContent" class="text-gray-600 text-sm">เว็ปไซต์นี้คือผลงานที่ผมพัฒนาขึ้นด้วยภาษา HTML tailwindcss Javascript
-            </p>
-          </div>
-        </div>
-        </div>
-    </div>
-  </section>
-
-  <section id="contact" class="h-screen flex items-center justify-center">
-    <a href="https://www.facebook.com/share/1DQNcLXkPW/" data-aos="zoom-in">
-    <div class="p-5 rounded-full  border hover:shadow-xl font-bold"><i class="ri-facebook-fill"></i>ติดต่อ</div>
-    </a>
-  </section>
-  <script src="https://cdn.tailwindcss.com"></script>
-<script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script>
-  <!-- JS -->
-  <script>
-    
-    const menuBtn = document.getElementById("menuBtn");
-    const mobileMenu = document.getElementById("mobileMenu");
-
-    menuBtn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
-  </script>
-
-  <script>
-
-    function openModal1() {
-      document.getElementById('modal1').classList.remove('hidden')
-    }
-    function closeModal1() {
-      document.getElementById('modal1').classList.add('hidden')
-    }
-
-    function openModal2() {
-      document.getElementById('modal2').classList.remove('hidden')
-    }
-    function closeModal2() {
-      document.getElementById('modal2').classList.add('hidden')
-    }
-
-    function openModal3() {
-      document.getElementById('modal3').classList.remove('hidden')
-    }
-    function closeModal3() {
-      document.getElementById('modal3').classList.add('hidden')
-    }
-
-    function openModal4() {
-      document.getElementById('modal4').classList.remove('hidden')
-    }
-    function closeModal4() {
-      document.getElementById('modal4').classList.add('hidden')
-    }
-
-  </script>
-
-  <script>
-function scrollToSection(e, id) {
-  e.preventDefault(); // ⭐ สำคัญมาก
-
-  const target = document.getElementById(id);
-  target.scrollIntoView({
-    behavior: "smooth"
-  });
-}
-</script>
-  
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-  AOS.init();
-</script>
 <script>
-    const startDate = new Date(2010, 10, 4, 0, 0, 0); // 4 พ.ย. 2010
+const btn = document.getElementById("menuBtn")
+const menu = document.getElementById("mobileMenu")
 
-    const elements = {
-      years: years,
-      months: months,
-      days: days,
-      hours: hours,
-      minutes: minutes,
-      seconds: seconds,
-    };
-
-    function animateChange(el, newValue) {
-      if (el.textContent == newValue) return;
-
-      el.classList.add("animate");
-
-      setTimeout(() => {
-        el.textContent = String(newValue).padStart(2, "0");
-        el.classList.remove("animate");
-
-        el.style.transform = "translateY(20px)";
-        el.style.opacity = "0";
-
-        requestAnimationFrame(() => {
-          el.style.transform = "translateY(0)";
-          el.style.opacity = "1";
-        });
-      }, 200);
-    }
-
-    function updateCounter() {
-      const now = new Date();
-
-      let years = now.getFullYear() - startDate.getFullYear();
-      let months = now.getMonth() - startDate.getMonth();
-      let days = now.getDate() - startDate.getDate();
-
-      if (days < 0) {
-        months--;
-        const prevMonth = new Date(now.getFullYear(), now.getMonth(), 0);
-        days += prevMonth.getDate();
-      }
-
-      if (months < 0) {
-        years--;
-        months += 12;
-      }
-
-      let hours = now.getHours();
-      let minutes = now.getMinutes();
-      let seconds = now.getSeconds();
-
-      animateChange(elements.years, years);
-      animateChange(elements.months, months);
-      animateChange(elements.days, days);
-      animateChange(elements.hours, hours);
-      animateChange(elements.minutes, minutes);
-      animateChange(elements.seconds, seconds);
-    }
-
-    updateCounter();
-    setInterval(updateCounter, 1000);
-  </script>
+btn.addEventListener("click", () => {
+  menu.classList.toggle("hidden")
+})
+</script>
 </body>
-
 </html>
